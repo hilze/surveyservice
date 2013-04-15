@@ -4,15 +4,16 @@
       <head><title> Survey Service: Users </title>
        </head>
       <body> 
-      	<a href="/" <h2>Survey Service</h2> </a>
+      	<a href="/" <h2>Survey Service </h2> </a>
       	
       	<h2> Search for a User </h2>
 	<form method="get" action="/users">
 		<label> User Name: <input type="text" name="Uname" value=""></label>
-		<input type="submit"/>
+		<input type="Search"/>
 	</form>
       	
-      	<h2> List of All Users </h2></a>
+      	
+      	<h2> All Users </h2></a>
 	<div id ="users">
 		<ol class="all">
 			<li class="user">
@@ -28,13 +29,15 @@
 		</ol>
 	</div>
 	
-	<h3> Add/Update a User </h3>
-	<form name="update-user" action="/users" class="user-update">
-			Name: <input type="text" name="name" value="" required />
+	<div class="control">
+	   <h3> Add/Update a User </h3>
+	  	<form name="update-user" action="/users" class="user-update">
+ 			Name: <input type="text" name="name" value="" required />
 			ID: <input type="text" name="userid" value="" required />
 			Job Title: <input type="text" name="title" value=""/>
 			<input type="submit" value="Submit"/>
-	</form>
+		</form>
+	</div>
 	
 	<h3> Remove a User </h3>
 	<a rel="http://sils-webinfo.github.io/surveyservice/edit" href="users/uid">RemoveUser</a>
