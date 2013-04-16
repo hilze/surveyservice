@@ -2,7 +2,28 @@
 <html>
   <meta charset="UTF-8">
   <title> List of Contacts </title>
-	<h3> Add Contact</h3>
+  <nav>
+      	 <ul>
+      	    <li>Home</li>
+      	    <li>Users</li>
+      	    <li> Respondents</li>
+      	    <li>Contacts</li>
+      	    <li>Surveys</li>
+      	 </ul>
+      </nav>
+
+	<h2> Search for Contacts </h2>
+	<form method="get" action="/contacts">
+		<label> User Name: </label><input type="text" name="Uname" value=""/>
+		<input type="Search"/>
+	</form>
+	
+	<form method="get" action="/contacts">
+	     <label> Responent Name</label><input type="text" name="Rname" value=""/>
+	     <input type="Search"/>
+	</form>
+
+<h3> Add Contact</h3>
 	<form method ="post" action="/contacts" class="contact-add">
 		ID: <input type="text" name="rid" value="" required>
 		Contact Date: <input type="datetime" name="contactdatetime" value="">
