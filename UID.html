@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html>
   <meta charset="UTF-8">
-  <title>User Name</title>
-	<div id ="users">
-		<ul class ="single">
-      <li class="user">
-			<h2>
-				<span class="name">UserName</span>
-				<span class="UID">Uid</span>
-				<span class="title">JobTitle</span>
-			</h2>
-		<h3> Update User </h3>
-			<form name="update" action="/users" class="user-update">
-				Name: <input type="text" name="name" value="" required/>
-				ID: <input type="text" name="userid" value="" required/>
-				Job Title: <input type="text" name="title" value=""/>
-				<input type="submit" value="Update"/>
-			</form>
+  <title>Survey Service: User Name</title>
+	<title>Election Data: The Big Bird Party</title>
+    	<link rel="stylesheet" href="/style.css">
+		
+        
+        <h2> 	<span class="name">UserName</span>
+		<span class="UID">Uid</span>
+		<span class="title">JobTitle</span>
+	</h2>
+		
+	
+	<h3> Add a Respondent </h3>
+	<form method ="post" action="/respondents" class="respondent-add">
+		Respondent Name: <input type="text" name="rname" value="" required >
+		ID: <input type="text" name="rid" value="" required >
+		Termination Date: <input type="datetime" name="termdatetime" value="">
+		Hire Date: <input type="datetime" name="hiredatetime" value="">
+		Supervisor: <input type="text" name="supname" value="">
+		Supervisor ID: <input type="text" name="supid" value="">
+		<input type="Submit">
+	</form>
+	
+	<a href="/contacts/"><h2>List of Contacts</h2></a>
+	<a href="/surveys/"><h2> List of Surveys</h2></a>
+	
 	<!--list of contact made by user-->
 	<div id="contacts">
+		 
+		
 		<h3>Contacts Completed by User</h3>
-		<ol class="all">
+		<ul>
 			<li>
 				Date: <span class="contact_datetime">2013-22-02 04:04:09</span>
 				Status: <span class="contact_status">Left Voicemail</span>
@@ -33,7 +44,7 @@
 				RID: <span class="rid">RID</span>
 				Name: <span class="rname">Respondent Name</span>
 			</li>
-		</ol>
+		</ul>
 	</div>
 			<!--list of surveys completed by user-->
 	<div id="surveys">
